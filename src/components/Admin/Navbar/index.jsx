@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoIosNotifications } from "react-icons/io";
-import icon from "../../assets/icon.avif"
+import icon from "../../../assets/images/Admin/icon.avif"
 import { useTranslation } from 'react-i18next';
 function Navbar() {
 

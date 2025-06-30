@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { IoMdAddCircle } from "react-icons/io";
 import { useLocation } from 'react-router';
 import { Table } from 'antd';
-import StoreForm from '../Forms/StoreForm';
 
 import { useTranslation } from 'react-i18next';
+import StoreForm from '../Forms';
 
 function DynamicPage({ columns, data, onSubmit }) {
     const { t, i18n } = useTranslation();
@@ -12,7 +12,7 @@ function DynamicPage({ columns, data, onSubmit }) {
     const [open, setOpen] = useState(false);
     let location = useLocation()
     let pathname = location.pathname.split('/')[2]
-    console.log("filterdata",filterData);
+    // console.log("filterdata",filterData);
     
     const dataWithKey = filterData?.map((item, index) => ({ ...item, key: item.id || index }));
     const lang = i18n.language;

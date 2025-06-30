@@ -1,0 +1,31 @@
+{
+  "dashboard": "Idarəetmə paneli",
+  "stores": "Mağazalar",
+  "users": "İstifadəçilər",
+  "suppliers": "Təchizatçılar",
+  "products": "Məhsullar",
+  "orders": "Sifarişlər",
+  "system": "Sistem",
+  "name": "Ad",
+  "location": "Məkan",
+  "manager": "Menecer",
+  "status": "Vəziyyət",
+  "phone": "Telefon",
+  "open": "Açıq",
+  "close":" Bağlı",
+  "action":"Hadisə",
+  "store": "Mağaza",
+  "add": "Əlavə et",
+  "data":"məlumatları",
+  "search": "Axtar",
+  "all": "Hamısı",
+  "order": "Sifariş",
+  "supplier": "Təchizatçı",
+  "product": "Məhsul",
+  "user": "İstifadəçi",
+  "submit":"Təsdiqlə",
+  "selectStatus":"Vəziyyəti seçin"
+
+
+
+}

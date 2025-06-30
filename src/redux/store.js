@@ -1,6 +1,7 @@
 //store file
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
+const reducers = {};
 import apis from "./services";
 const middlewares = [];
 

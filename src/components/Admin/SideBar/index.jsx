@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import { FaAppStore, FaChartLine, FaHome, FaUsers, FaUserSecret } from "react-icons/fa";
 import { BsFillCartCheckFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
