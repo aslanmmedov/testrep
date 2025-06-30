@@ -1,4 +1,5 @@
+import { userApi } from "./Userservice"
 
-const apis  = []
+const apis  = [userApi]
 
 export default apis

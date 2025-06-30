@@ -1,0 +1,87 @@
+.dynamic-page {
+  margin-top: 50px;
+  @include flex(flex-start, flex-start, column, 20px);
+
+  h2 {
+    text-transform: capitalize;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 450;
+    padding-bottom: 10px;
+    color: rgb(35, 34, 34);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .dynamic-table {
+    width: 100%;
+    @include flex(flex-start, flex-start, column, 20px);
+    background-color: white;
+
+    border-radius: 5px;
+    padding: 10px;
+    .table-head {
+      width: 100%;
+      @include flex(space-between, center, row);
+      h3 {
+        text-transform: capitalize;
+        font-size: 0.95rem;
+        font-weight: 450;
+        padding-bottom: 10px;
+        color: rgb(35, 34, 34);
+      }
+      button {
+        @include flex(center, center, row, 5px);
+        text-transform: capitalize;
+        color: white;
+        background-color: $site-color;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        cursor: pointer;
+      }
+    }
+    .actions {
+      width: 100%;
+      @include flex(space-between, center, row);
+      input {
+        background-color: white;
+     
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+      select {
+        background-color: white;
+      
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .action-btns {
+      @include flex(flex-start, center);
+
+      border-radius: 5px;
+      button {
+        @include flex(center, center);
+        color: white;
+        background-color: $site-color;
+        padding: 8px 10px;
+
+        cursor: pointer;
+        &:first-of-type {
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+        &:last-of-type {
+          border-bottom-right-radius: 5px;
+          border-top-right-radius: 5px;
+          background-color: rgb(247, 63, 118);
+        }
+      }
+    }
+  }
+}
