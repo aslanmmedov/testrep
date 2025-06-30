@@ -1,0 +1,42 @@
+.sidebarr {
+  position: fixed;
+  @include flex(flex-start, flex-start, column, 20px);
+  height: 100vh;
+  width: 20%;
+  background-color: $site-color;
+
+  h1 {
+    text-transform: uppercase;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  ul {
+    width: 100%;
+    @include flex(flex-start, flex-start, column, 20px);
+    list-style: none;
+    li {
+      width: 100%;
+    }
+    a {
+      @include flex(flex-start, flex-start, row, 10px);
+    }
+    .navlink {
+      color: white;
+      background: #01a9ae;
+      text-decoration: none;
+      padding: 10px 0px 10px 20px ;
+      display: flex;
+      align-items: center;
+    }
+
+    .navlink.active {
+      color: #01a9ae;
+      background: white;
+    }
+  }
+}
